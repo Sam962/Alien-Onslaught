@@ -4,5 +4,5 @@ spawnrate = 1 * game_get_speed(gamespeed_fps); //https://forum.gamemaker.io/inde
 alarm[0] = 1;
 
 
-global.spd = 1
+
 global.level = 1
