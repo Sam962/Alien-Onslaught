@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (power_up == 100){
-	power_up = 0;
-}
+
+direction = point_direction(x, y, mouse_x, mouse_y);
+

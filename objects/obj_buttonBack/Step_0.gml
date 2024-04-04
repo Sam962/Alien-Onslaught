@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (mouse_check_button_pressed(mb_right)) //right click
+if (mouse_check_button_pressed(mb_middle)) //scroll button
 {
 	if (window_get_fullscreen())
 	{

@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (power_up == 100){
-	power_up = 0;
+hp = hp - 25 //subtract 25 points
+if(hp == 0 or hp < 0){
+
+instance_destroy()
+
 }

@@ -38,10 +38,19 @@ if (!vertical_collision) {
     y = default_y;
 }
 
-if (power_up < 100){
+if (power_up < 100){ //blue bar
 
 	power_up +=1   //.05 is the ideal charge up rate?
 
 } else if (power_up > 100){
 	power_up = 100;
+}
+
+//manual shooting 
+image_angle = point_direction(x, y, mouse_x, mouse_y);
+if (mouse_check_button_pressed(mb_right)){
+	  var bullet_instance = instance_create_layer(x, y, "Instances", obj_bullet);
+    //bullet fires in front of the player
+    bullet_instance.x += lengthdir_x(20, image_angle);
+    bullet_instance.y += lengthdir_y(20, image_angle);
 }
