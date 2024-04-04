@@ -37,3 +37,11 @@ var vertical_collision = place_meeting(x, default_y, obj_barrier);
 if (!vertical_collision) {
     y = default_y;
 }
+
+if (power_up < 100){
+
+	power_up +=1   //.05 is the ideal charge up rate?
+
+} else if (power_up > 100){
+	power_up = 100;
+}
