@@ -6,6 +6,8 @@ if instance_exists(obj_player){
 	
 	//health bar
 	draw_healthbar(8, 70, 256, 100, obj_player.power_up, c_red, c_blue, c_blue, 0, true, true);
-
+	
+	draw_text(10, 20, "Health: " + string(health))
+	draw_text(250, 20, "Scrap: " + string(scrap))
 }
 
