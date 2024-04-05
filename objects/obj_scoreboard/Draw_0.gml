@@ -11,3 +11,5 @@ if instance_exists(obj_player){
 	draw_text(250, 20, "Scrap: " + string(scrap))
 }
 
+
+

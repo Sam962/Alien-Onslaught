@@ -54,3 +54,13 @@ if (mouse_check_button_pressed(mb_right)){
     bullet_instance.x += lengthdir_x(20, image_angle);
     bullet_instance.y += lengthdir_y(20, image_angle);
 }
+
+
+// Temporary until shop can be implemented
+if (mouse_check_button_pressed(mb_left)){
+	if (obj_scoreboard.scrap > obj_tower.cost){
+		instance_create_layer(x, y, "Instances", obj_tower);
+		obj_scoreboard.scrap -= obj_tower.cost;
+	}
+	
+}
