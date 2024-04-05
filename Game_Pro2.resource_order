@@ -18,6 +18,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_barrier","order":10,"path":"objects/obj_barrier/obj_barrier.yy",},
+    {"name":"obj_bullet","order":15,"path":"objects/obj_bullet/obj_bullet.yy",},
     {"name":"obj_buttonBack","order":3,"path":"objects/obj_buttonBack/obj_buttonBack.yy",},
     {"name":"obj_buttonCredits","order":4,"path":"objects/obj_buttonCredits/obj_buttonCredits.yy",},
     {"name":"obj_buttonHelp","order":1,"path":"objects/obj_buttonHelp/obj_buttonHelp.yy",},
@@ -31,7 +32,8 @@
     {"name":"obj_player","order":9,"path":"objects/obj_player/obj_player.yy",},
     {"name":"obj_scoreboard","order":14,"path":"objects/obj_scoreboard/obj_scoreboard.yy",},
     {"name":"obj_titleText","order":6,"path":"objects/obj_titleText/obj_titleText.yy",},
-    {"name":"obj_bullet","order":15,"path":"objects/obj_bullet/obj_bullet.yy",},
+    {"name":"obj_tower","order":16,"path":"objects/obj_tower/obj_tower.yy",},
+    {"name":"obj_tower_bullet","order":17,"path":"objects/obj_tower_bullet/obj_tower_bullet.yy",},
     {"name":"Credits","order":3,"path":"rooms/Credits/Credits.yy",},
     {"name":"Instructions","order":2,"path":"rooms/Instructions/Instructions.yy",},
     {"name":"Room1","order":1,"path":"rooms/Room1/Room1.yy",},
@@ -40,5 +42,6 @@
     {"name":"spr_goal","order":4,"path":"sprites/spr_goal/spr_goal.yy",},
     {"name":"spr_player","order":1,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"spr_tiles_500x500","order":2,"path":"sprites/spr_tiles_500x500/spr_tiles_500x500.yy",},
+    {"name":"spr_tower","order":6,"path":"sprites/spr_tower/spr_tower.yy",},
   ],
 }
