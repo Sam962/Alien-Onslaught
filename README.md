@@ -32,7 +32,7 @@ Alien Onslaught is an action-packed tower defense game set in a futuristic world
 * Shift: Stun enemies with an EMP blast.
 * When in tower placement mode:
   * Left Click: Place a tower at the current mouse position.
-  * Right Click: Cancel tower placement .
+  * Right Click: Cancel tower placement.
 
 # How to Play
 
