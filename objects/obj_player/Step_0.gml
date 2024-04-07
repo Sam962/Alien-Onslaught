@@ -46,6 +46,21 @@ if (power_up < 100){ //blue bar
 	power_up = 100;
 }
 
+image_angle = point_direction(x, y, mouse_x, mouse_y);
+if(mouse_check_button(mb_left) and player_can_shoot){
+	// Conditions to prevent shooting when using shop
+	if (not (position_meeting(mouse_x, mouse_y, obj_tower_shop))){
+		if (obj_tower_shop.turret_selected = false){
+			player_can_shoot = false;
+			  var bullet_instance = instance_create_layer(x, y, "Instances", obj_bullet);
+		    //bullet fires in front of the player
+		    bullet_instance.x += lengthdir_x(20, image_angle);
+		    bullet_instance.y += lengthdir_y(20, image_angle);
+			alarm[0] = room_speed * fire_speed;
+		}
+	}
+}
+
 // Temporary until shop can be implemented
 //if (mouse_check_button_pressed(mb_left)){
 //	if (obj_scoreboard.scrap > obj_tower.cost){
