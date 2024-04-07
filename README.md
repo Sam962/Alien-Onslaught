@@ -7,9 +7,10 @@ Welcome to Alien Onslaught! Brace yourself for an exhilarating tower defense adv
 2.    Features
 3.    Controls
 4.    How to Play
-5.    Screenshots
-6.    Contributing
-7.    License
+5.    Credits
+6.    Screenshots
+7.    Contributing
+8.    Licensing
 
 # Introduction
 
@@ -31,8 +32,9 @@ Alien Onslaught is an action-packed tower defense game set in a futuristic world
 * Left Click: Shoot at enemies and select towers from the shop.
 * Shift: Stun enemies with an EMP blast.
 * When in tower placement mode:
-  * Left Click: Place a tower at the current mouse position.
-  * Right Click: Cancel tower placement.
+    * Left Click: Place atower at the current mouse position.
+    * Right Click: Cancel tower placement.
+
 
 # How to Play
 
@@ -43,6 +45,11 @@ Alien Onslaught is an action-packed tower defense game set in a futuristic world
 * Direct Combat: Engage enemies directly by shooting them with your weapon. Aim using the mouse cursor and click the right mouse button to fire.
 * Victory Conditions: Successfully repel all waves of alien attacks to complete the level. Earn rewards and unlock new challenges as you progress.
 
+# Credits
+* Producer: Sam Aldehayyat
+* Designer: M. Mitchell Yang
+* Artist: Elise Machado
+* Programmer: Luke Hopson
 
 # Screenshots
 
@@ -52,7 +59,7 @@ Alien Onslaught is an action-packed tower defense game set in a futuristic world
 
 Contributions to the Alien Onslaught project are welcome! If you encounter any bugs or have suggestions for improvements, please open an issue or submit a pull request on GitHub.
 
-# License
+# Licensing
 
 - will be provided later on!
 
