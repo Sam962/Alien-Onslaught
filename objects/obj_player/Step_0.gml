@@ -40,7 +40,7 @@ if (!vertical_collision) {
 
 if (power_up < 100){ //blue bar
 
-	power_up +=1   //.05 is the ideal charge up rate?
+	power_up += .05;   //.05 is the ideal charge up rate?
 
 } else if (power_up > 100){
 	power_up = 100;
