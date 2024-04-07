@@ -9,6 +9,7 @@ if instance_exists(obj_player){
 	
 	draw_text(10, 20, "Health: " + string(health))
 	draw_text(250, 20, "Scrap: " + string(scrap))
+	draw_text(1700, 20, "Wave: " + string(global.level))
 }
 
 

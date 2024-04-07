@@ -6,4 +6,4 @@ fire_speed = 1;
 target = noone;
 radius = 200;
 tower_selected = false;
-cost = 60;
+cost = 150;
