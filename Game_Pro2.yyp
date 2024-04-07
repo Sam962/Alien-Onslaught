@@ -58,6 +58,7 @@
     {"id":{"name":"obj_tower_bullet","path":"objects/obj_tower_bullet/obj_tower_bullet.yy",},},
     {"id":{"name":"obj_tower","path":"objects/obj_tower/obj_tower.yy",},},
     {"id":{"name":"obj_win","path":"objects/obj_win/obj_win.yy",},},
+    {"id":{"name":"obj_tower_shop","path":"objects/obj_tower_shop/obj_tower_shop.yy",},},
     {"id":{"name":"path_Enemy","path":"paths/path_Enemy/path_Enemy.yy",},},
     {"id":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
     {"id":{"name":"Instructions","path":"rooms/Instructions/Instructions.yy",},},
