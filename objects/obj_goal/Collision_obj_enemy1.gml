@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-instance_destroy();
 
-health -= 20;
+// for later on 
 
-//if health == 0: {
-	//room_goto(rm_lose);
+//if (health <= 0) {
+//	room_goto(rm_lose);
 //}
+
+room_goto(rm_lose);

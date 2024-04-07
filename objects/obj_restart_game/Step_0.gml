@@ -1,9 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-instance_destroy();
 
-health -= 20;
+// restart the game
 
-//if health == 0: {
-	//room_goto(rm_lose);
-//}
+if(keyboard_check(vk_anykey)){
+	game_restart()
+}
