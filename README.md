@@ -8,7 +8,7 @@ Welcome to Alien Onslaught! Brace yourself for an exhilarating tower defense adv
 3.    Controls
 4.    How to Play
 5.    Screenshots
-6.   Contributing
+6.    Contributing
 7.    License
 
 # Introduction
@@ -28,7 +28,11 @@ Alien Onslaught is an action-packed tower defense game set in a futuristic world
 
 * W/A/S/D: Use the W, A, S, and D keys to move the player character.
 * Mouse: Use the mouse cursor to aim.
-* Right Click: Right-click to shoot regular bullets at enemies.
+* Left Click: Shoot at enemies and select towers from the shop.
+* Shift: Stun enemies with an EMP blast.
+* When in tower placement mode:
+  * Left Click: Place a tower at the current mouse position.
+  * Right Click: Cancel tower placement .
 
 # How to Play
 
