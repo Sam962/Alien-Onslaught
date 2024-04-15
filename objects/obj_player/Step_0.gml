@@ -46,10 +46,13 @@ if (power_up < 100){ //blue bar
 	power_up = 100;
 }
 
+
 image_angle = point_direction(x, y, mouse_x, mouse_y);
 if(mouse_check_button(mb_left) and player_can_shoot){
-	// Conditions to prevent shooting when using shop
-	if (not (position_meeting(mouse_x, mouse_y, obj_tower_shop))){
+	// Conditions to prevent shooting when using shop or clicking tower
+	// TODO: ADD LINE TO ALLOW SHOOTING IF MOUSE ALREADY HELD DOWN PRIOR TO POSITION MEETING (idk yet)
+	if (not (position_meeting(mouse_x, mouse_y, obj_tower_shop) 
+	or (position_meeting(mouse_x, mouse_y, obj_tower)))){
 		if (obj_tower_shop.turret_selected = false){
 			player_can_shoot = false;
 			  var bullet_instance = instance_create_layer(x, y, "Instances", obj_bullet);
@@ -69,5 +72,14 @@ if(mouse_check_button(mb_left) and player_can_shoot){
 //	}
 //	
 //}
+
+
+// Tower radius only shows if tower is selected
+if (position_meeting(mouse_x, mouse_y, obj_tower) and mouse_check_button_pressed(mb_left)){
+	var selected_tower = instance_place(mouse_x, mouse_y, obj_tower)
+	selected_tower.tower_selected = true;
+} else if (not position_meeting(mouse_x, mouse_y, obj_tower) and mouse_check_button_pressed(mb_left)){
+	obj_tower.tower_selected = false;
+}
 
 
