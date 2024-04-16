@@ -14,8 +14,9 @@ if(count < amount) { //if count is less than a specified amount, spawn an enemy 
         global.killed = 0; // Reset kills each wave
 		speed *= 1.3; // increase enemy speed each wave
     }
-    alarm[0] = spawnrate; // Reset alarm for next wave, increase this to give more time between waves, 
+    alarm[0] = spawnrate + 300; // Reset alarm for next wave, increase this to give more time between waves, 
 	// maybe add clickable button to play next round.
+	//300 gives roughly 5 seconds in-between
 }
 
 if (global.level > 5){

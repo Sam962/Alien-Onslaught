@@ -4,4 +4,4 @@ global.killed = 0;
 spawnrate = 1 * game_get_speed(gamespeed_fps); // Adjust spawn rate according to game speed
 alarm[0] = spawnrate;
 global.level = 1;
-global.amount = 10; // Initial amount of enemies per wave
+global.amount = 5; // Initial amount of enemies per wave
