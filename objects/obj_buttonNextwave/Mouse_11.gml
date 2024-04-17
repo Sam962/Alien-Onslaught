@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-obj_scoreboard.scrap += value;
-global.killed++;
- 
+// Inherit the parent event
+event_inherited();
+instance_destroy();
+
