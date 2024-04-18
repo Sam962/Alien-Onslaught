@@ -39,9 +39,10 @@ if (!vertical_collision) {
 }
 
 if (power_up < 100){ //blue bar
-
-	power_up += .05;   //.05 is the ideal charge up rate?
-
+	// Power no longer charges between waves.
+	if (not instance_exists(obj_buttonNextwave)){
+		power_up += .05;   //.05 is the ideal charge up rate?
+	}
 } else if (power_up > 100){
 	power_up = 100;
 }
