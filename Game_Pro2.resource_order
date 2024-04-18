@@ -45,6 +45,7 @@
     {"name":"obj_tower_shop","order":21,"path":"objects/obj_tower_shop/obj_tower_shop.yy",},
     {"name":"obj_tower","order":16,"path":"objects/obj_tower/obj_tower.yy",},
     {"name":"obj_win","order":18,"path":"objects/obj_win/obj_win.yy",},
+    {"name":"obj_instructionsText","order":27,"path":"objects/obj_instructionsText/obj_instructionsText.yy",},
     {"name":"Credits","order":3,"path":"rooms/Credits/Credits.yy",},
     {"name":"Instructions","order":2,"path":"rooms/Instructions/Instructions.yy",},
     {"name":"rm_lose","order":5,"path":"rooms/rm_lose/rm_lose.yy",},
