@@ -56,7 +56,7 @@ if(mouse_check_button(mb_left) and player_can_shoot){
 	or (position_meeting(mouse_x, mouse_y, obj_tower)))){
 		if (obj_tower_shop.turret_selected = false){
 			player_can_shoot = false;
-			  var bullet_instance = instance_create_layer(x, y, "Instances", obj_bullet);
+			  var bullet_instance = instance_create_layer(x, y, "Player", obj_bullet);
 		    //bullet fires in front of the player
 		    bullet_instance.x += lengthdir_x(20, image_angle);
 		    bullet_instance.y += lengthdir_y(20, image_angle);
