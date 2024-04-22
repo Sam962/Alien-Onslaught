@@ -16,7 +16,12 @@ if(count < amount) { //if count is less than a specified amount, spawn an enemy 
 		// else if (global.level >= 6 && global.level < 10) (count % 5) == 0....
 		// spawn enemy2 during last 10 spawns: etc.
 	    // else if (global.level == 10) if count < 10.... 
+		else if (global.level >= 6 && global.level < 10){
+		if ((count % 9) == 0){
+			instance_create_depth(x, y, 0, obj_enemy3)
+		}
 		
+		}
 }
 
 
