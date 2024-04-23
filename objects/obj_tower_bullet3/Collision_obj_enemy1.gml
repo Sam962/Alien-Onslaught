@@ -5,4 +5,4 @@ if(obj_enemy1.hp == 0 or obj_enemy1.hp < 0){
 
 instance_destroy(other)
 
-}
+} //unable to parent it to obj_bullet_tower1.

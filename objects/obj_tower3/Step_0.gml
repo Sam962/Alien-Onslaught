@@ -22,7 +22,7 @@ if (target != noone && can_shoot){
 	bullet.target = target; 
 	bullet.fire_speed = fire_speed;
 	bullet.direction = point_direction(x, y, target.x, target.y);
-	alarm[0] = (room_speed * fire_speed)* 4; //slower firing rate!!!
+	alarm[0] = (room_speed * fire_speed)* 5; //slower firing rate!!!
 } 
 
 // If this if statement is consolidated into the first one, there delay in pointing toward the enemy
