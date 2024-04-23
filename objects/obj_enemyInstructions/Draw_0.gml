@@ -3,9 +3,13 @@
 depth = -101;
 
 draw_set_font(ft_menu); //select text
-draw_text(x - 75, y - 125, "INSTRUCTIONS");
+draw_text(x - 95, y - 65, "ENEMY TYPES");
 
-draw_text(x/11, y + 75, "W/A/S/D: Use the W, A, S, and D keys to move the player character.\n* Mouse: Use the mouse cursor to aim. \n* Left Click: Shoot at enemies and select towers from the shop. \n* Shift: Stun enemies with an EMP blast.\nWhen in tower placement mode: \n* Left Click: Place atower at the current mouse position. \n* Right Click: Cancel tower placement. \n \n***Survive 10 waves!***" );
+draw_text(obj_enemy1INFO.x + 20, obj_enemy1INFO.y - 23, "Standard Alien enemy. Gradually gets faster.");
+
+draw_text(obj_enemy2INFO.x + 20, obj_enemy2INFO.y - 23, "Faster Alien variant. Gets much faster!");
+
+draw_text(obj_enemy3INFO.x + 20, obj_enemy3INFO.y - 23, "Tankier Alien variant. Has more health but moves slower \nthan the others.");
 
 
 
