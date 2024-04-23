@@ -52,9 +52,18 @@ image_angle = point_direction(x, y, mouse_x, mouse_y);
 if(mouse_check_button(mb_left) and player_can_shoot){
 	// Conditions to prevent shooting when using shop or clicking tower
 	// TODO: ADD LINE TO ALLOW SHOOTING IF MOUSE ALREADY HELD DOWN PRIOR TO POSITION MEETING (idk yet)
+	// This implementation kinda sucks so simplify it later:
 	if (not (position_meeting(mouse_x, mouse_y, obj_tower_shop) 
+	or  (position_meeting(mouse_x, mouse_y, obj_tower_shop2))
+	or  (position_meeting(mouse_x, mouse_y, obj_tower_shop3)) 
+	or  (position_meeting(mouse_x, mouse_y, obj_slowmo_shop))
+	or (position_meeting(mouse_x, mouse_y, obj_tower2))
+	or (position_meeting(mouse_x, mouse_y, obj_tower3))
 	or (position_meeting(mouse_x, mouse_y, obj_tower)))){
-		if (obj_tower_shop.turret_selected = false){
+		if (not (obj_tower_shop.turret_selected 
+		or obj_tower_shop2.turret_selected 
+		or obj_tower_shop3.turret_selected
+		or obj_slowmo_shop.turret_selected)){
 			player_can_shoot = false;
 			  var bullet_instance = instance_create_layer(x, y, "Player", obj_bullet);
 		    //bullet fires in front of the player
