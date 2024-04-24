@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (instance_exists(obj_buff) and (distance_to_object(obj_buff) <= obj_buff.radius) and not buffed){
+	buffed = true;
+	show_debug_message("Buffed")
+}
+
+
 // If a target selected, make sure it is still in the radius, and still alive otherwise reset to no target.
 if (target != noone) {
 	if(instance_exists(target) == false || (point_distance(x, y, target.x, target.y) > radius)){
@@ -20,7 +26,12 @@ if (target != noone && can_shoot){
 	bullet.target = target; 
 	bullet.fire_speed = fire_speed;
 	bullet.direction = point_direction(x, y, target.x, target.y);
-	alarm[0] = room_speed * fire_speed;
+	if (not buffed){
+		alarm[0] = room_speed * fire_speed;
+	} else {
+		alarm[0] = room_speed * (fire_speed * obj_buff.shot_time_cut);
+		show_debug_message("Buffed shot");
+	}
 } 
 
 // If this if statement is consolidated into the first one, there delay in pointing toward the enemy
@@ -32,5 +43,6 @@ if (target != noone){
 	    target = noone;
 	}
 }
+
 
 

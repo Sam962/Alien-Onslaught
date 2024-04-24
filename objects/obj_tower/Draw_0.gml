@@ -5,6 +5,7 @@
 draw_set_color(c_red);
 
 if (tower_selected) {
+	draw_set_alpha(1);
 	draw_circle(x, y, radius, true);
 }
 draw_self()

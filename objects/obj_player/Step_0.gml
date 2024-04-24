@@ -92,4 +92,16 @@ if (position_meeting(mouse_x, mouse_y, obj_tower) and mouse_check_button_pressed
 	obj_tower.tower_selected = false;
 }
 
+if (position_meeting(mouse_x, mouse_y, obj_buff) and mouse_check_button_pressed(mb_left)){
+	var selected_buff = instance_place(mouse_x, mouse_y, obj_buff)
+	selected_buff.buff_selected = true;
+} else if (not position_meeting(mouse_x, mouse_y, obj_buff) 
+	and not position_meeting(mouse_x, mouse_y, obj_tower_shop) 
+	and not obj_tower_shop.turret_selected // Radius doesn't go away if shop is clicked, tower is placed, another buff is clicked
+	and mouse_check_button_pressed(mb_left)){
+	obj_buff.buff_selected = false;
+	// I will make a better method to do this later, without a massive if statement!
+}
+
+
 
