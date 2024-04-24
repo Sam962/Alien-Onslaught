@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_buff",
+  "%Name":"obj_shop_window",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_buff",
+  "name":"obj_shop_window",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_buff",
-    "path":"sprites/spr_buff/spr_buff.yy",
+    "name":"spr_shop_window",
+    "path":"sprites/spr_shop_window/spr_shop_window.yy",
   },
   "spriteMaskId":null,
   "visible":true,

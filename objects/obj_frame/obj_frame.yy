@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_buff",
+  "%Name":"obj_frame",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_buff",
+  "name":"obj_frame",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_buff",
-    "path":"sprites/spr_buff/spr_buff.yy",
+    "name":"spr_frame",
+    "path":"sprites/spr_frame/spr_frame.yy",
   },
   "spriteMaskId":null,
   "visible":true,
