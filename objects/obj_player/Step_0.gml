@@ -49,42 +49,40 @@ if (power_up < 100){ //blue bar
 
 
 image_angle = point_direction(x, y, mouse_x, mouse_y);
-if(mouse_check_button(mb_left) and player_can_shoot){
-	// Conditions to prevent shooting when using shop or clicking tower
-	// TODO: ADD LINE TO ALLOW SHOOTING IF MOUSE ALREADY HELD DOWN PRIOR TO POSITION MEETING (idk yet)
-	// This implementation kinda sucks so simplify it later:
-	if (not (position_meeting(mouse_x, mouse_y, obj_tower_shop) 
-	or  (position_meeting(mouse_x, mouse_y, obj_tower_shop2))
-	or  (position_meeting(mouse_x, mouse_y, obj_tower_shop3)) 
-	or  (position_meeting(mouse_x, mouse_y, obj_slowmo_shop))
-	or (position_meeting(mouse_x, mouse_y, obj_tower2))
-	or (position_meeting(mouse_x, mouse_y, obj_tower3))
-	or (position_meeting(mouse_x, mouse_y, obj_tower)))){
-		if (not (obj_tower_shop.turret_selected 
-		or obj_tower_shop2.turret_selected 
-		or obj_tower_shop3.turret_selected
-		or obj_slowmo_shop.turret_selected)){
-			player_can_shoot = false;
-			  var bullet_instance = instance_create_layer(x, y, "Player", obj_bullet);
-		    //bullet fires in front of the player
-		    bullet_instance.x += lengthdir_x(20, image_angle);
-		    bullet_instance.y += lengthdir_y(20, image_angle);
-			alarm[0] = room_speed * fire_speed;
-		}
-	}
+
+
+// ================================= Prevent shooting when clicking shop =================================
+// TODO: ADD LINE TO ALLOW SHOOTING IF MOUSE ALREADY HELD DOWN PRIOR TO POSITION MEETING (idk yet)
+if (mouse_check_button(mb_left) and player_can_shoot) {
+    var shop_hover_check = [obj_tower_shop, obj_tower_shop2, obj_tower_shop3, obj_slowmo_shop];
+	var tower_hover_check = [obj_tower, obj_tower2, obj_tower3, obj_buff];
+    var sure_shoot = true;
+    
+    for (var i = 0; i < array_length(shop_hover_check); i++) {
+        if (position_meeting(mouse_x, mouse_y, shop_hover_check[i]) || shop_hover_check[i].turret_selected) {
+            sure_shoot = false;
+            break;
+        }
+    }
+	
+	for (var i = 0; i < array_length(tower_hover_check); i++) {
+        if (position_meeting(mouse_x, mouse_y, tower_hover_check[i])) {
+            sure_shoot = false;
+            break;
+        }
+    }
+    
+    if (sure_shoot) {
+        var bullet_instance = instance_create_layer(x, y, "Player", obj_bullet);
+        // Bullet fires in front of the player
+        bullet_instance.x += lengthdir_x(20, image_angle);
+        bullet_instance.y += lengthdir_y(20, image_angle);
+        alarm[0] = room_speed * fire_speed;
+		player_can_shoot = false;
+    } 
 }
 
-// Temporary until shop can be implemented
-//if (mouse_check_button_pressed(mb_left)){
-//	if (obj_scoreboard.scrap > obj_tower.cost){
-//		instance_create_layer(x, y, "Instances", obj_tower);
-//		obj_scoreboard.scrap -= obj_tower.cost;
-//	}
-//	
-//}
-
-
-// Tower radius only shows if tower is selected
+// ================================= Tower selected when clicked, deselected otherwise =================================
 if (position_meeting(mouse_x, mouse_y, obj_tower) and mouse_check_button_pressed(mb_left)){
 	var selected_tower = instance_place(mouse_x, mouse_y, obj_tower)
 	selected_tower.tower_selected = true;
@@ -92,16 +90,27 @@ if (position_meeting(mouse_x, mouse_y, obj_tower) and mouse_check_button_pressed
 	obj_tower.tower_selected = false;
 }
 
+// ================================= Buff radius selection =================================
+var shops_to_check = [obj_tower_shop, obj_tower_shop2, obj_tower_shop3, obj_slowmo_shop];
+var no_collision = true;
+
+// If obj_buff is clicked, it will be marked as selected to show the radius
 if (position_meeting(mouse_x, mouse_y, obj_buff) and mouse_check_button_pressed(mb_left)){
 	var selected_buff = instance_place(mouse_x, mouse_y, obj_buff)
-	selected_buff.buff_selected = true;
-} else if (not position_meeting(mouse_x, mouse_y, obj_buff) 
-	and not position_meeting(mouse_x, mouse_y, obj_tower_shop) 
-	and not obj_tower_shop.turret_selected // Radius doesn't go away if shop is clicked, tower is placed, another buff is clicked
-	and mouse_check_button_pressed(mb_left)){
-	obj_buff.buff_selected = false;
-	// I will make a better method to do this later, without a massive if statement!
+	selected_buff.turret_selected = true;
+} else { // If any shops in the above array "shops_to_check" are clicked, the buff will not be de-selected
+	for (var i = 0; i < array_length(shops_to_check); i++) {
+	    if (position_meeting(mouse_x, mouse_y, shops_to_check[i]) || shops_to_check[i].turret_selected) {
+	        no_collision = false;
+	        break;
+	    }
+	}
+	// If anywhere else is on the screen is clicked, the buff will be de-selected
+	if (no_collision && mouse_check_button_pressed(mb_left) and not position_meeting(mouse_x, mouse_y, obj_tower)) {
+	    obj_buff.turret_selected = false;
+	}
 }
+
 
 
 

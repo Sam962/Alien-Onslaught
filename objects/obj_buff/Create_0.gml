@@ -3,4 +3,4 @@
 
 shot_time_cut = .5; // As a decimal .5 will reduce time between shots to 50% of original value, etc
 radius = 100;
-buff_selected = false;
+turret_selected = false;

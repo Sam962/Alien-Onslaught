@@ -4,7 +4,7 @@
 draw_self();
 
 
-if (buff_selected) {
+if (turret_selected) {
 	draw_set_colour(c_lime);
 	draw_set_alpha(0.2);
 	draw_circle(x, y, radius, false);
