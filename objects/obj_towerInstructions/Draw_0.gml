@@ -9,7 +9,7 @@ draw_text(obj_towerINFO.x + 20, obj_towerINFO.y - 13, "Standard tower. Costs 50 
 
 draw_text(obj_tower2INFO.x + 20, obj_tower2INFO.y - 13, "Faster-shooting tower. Costs 75 scrap.");
 
-draw_text(obj_tower3INFO.x + 20, obj_tower3INFO.y - 13, "Slow-shooting tower. Fires piercing energy blasts. \nCosts 85 scrap.");
+draw_text(obj_tower3INFO.x + 20, obj_tower3INFO.y - 13, "Slow-shooting tower. Fires piercing energy blasts. \nCosts 120 scrap.");
 
 draw_text(obj_slowmo_sprite.x + 20, obj_slowmo_sprite.y - 13, "Energy-goo. Enemies that touch this slow down. Can stack. \n Despawns at the start of every round. Costs 80 scrap.");
 
