@@ -22,6 +22,7 @@
     {"name":"obj_barrier","order":10,"path":"objects/obj_barrier/obj_barrier.yy",},
     {"name":"obj_buff","order":50,"path":"objects/obj_buff/obj_buff.yy",},
     {"name":"obj_buffINFO","order":53,"path":"objects/obj_buffINFO/obj_buffINFO.yy",},
+    {"name":"obj_buff_shop","order":54,"path":"objects/obj_buff_shop/obj_buff_shop.yy",},
     {"name":"obj_bullet","order":15,"path":"objects/obj_bullet/obj_bullet.yy",},
     {"name":"obj_buttonBack","order":3,"path":"objects/obj_buttonBack/obj_buttonBack.yy",},
     {"name":"obj_buttonBack2Instr","order":39,"path":"objects/obj_buttonBack2Instr/obj_buttonBack2Instr.yy",},

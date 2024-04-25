@@ -1,5 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-health = 100;
-scrap = 70;
+draw_self(); // draw the tower image
+draw_text(x -20, y + 30, obj_buff.cost);

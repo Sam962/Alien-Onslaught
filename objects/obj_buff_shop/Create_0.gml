@@ -1,5 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-health = 100;
-scrap = 70;
+turret_selected = false;
+placement_delay = 10;

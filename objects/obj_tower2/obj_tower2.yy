@@ -8,7 +8,7 @@
   "name":"obj_tower2",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_tower","path":"objects/obj_tower/obj_tower.yy",},"propertyId":{"name":"radius","path":"objects/obj_tower/obj_tower.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"250",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_tower","path":"objects/obj_tower/obj_tower.yy",},"propertyId":{"name":"cost","path":"objects/obj_tower/obj_tower.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"75",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_tower","path":"objects/obj_tower/obj_tower.yy",},"propertyId":{"name":"cost","path":"objects/obj_tower/obj_tower.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"70",},
   ],
   "parent":{
     "name":"Objects",
