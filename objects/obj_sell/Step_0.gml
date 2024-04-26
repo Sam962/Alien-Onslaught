@@ -35,5 +35,4 @@ if (selling){
 	
 } else {
 	window_set_cursor(cr_default);
-	cursor_sprite = -1;
 }
