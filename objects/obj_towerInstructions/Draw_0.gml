@@ -13,7 +13,7 @@ draw_text(obj_tower3INFO.x + 20, obj_tower3INFO.y - 13, "Slow-shooting tower. Fi
 
 draw_text(obj_slowmo_sprite.x + 20, obj_slowmo_sprite.y - 13, "Energy-goo. Enemies that touch this slow down. Can stack. \n Despawns at the start of every round. Costs 80 scrap.");
 
-draw_text(obj_buffINFO.x + 20, obj_buffINFO.y - 13, "100m Radius. Place near towers to increase firing rate by \n50%. Costs X scrap.")
+draw_text(obj_buffINFO.x + 20, obj_buffINFO.y - 13, "100m Radius. Place near towers to increase firing rate by \n50%. Costs 45 scrap.")
 
 
 //W/A/S/D: Use the W, A, S, and D keys to move the player character. * Mouse: Use the mouse cursor to aim. * Left Click: Shoot at enemies and select towers from the shop. * Shift: Stun enemies with an EMP blast. * When in tower placement mode: * Left Click: Place atower at the current mouse position. * Right Click: Cancel tower placement.

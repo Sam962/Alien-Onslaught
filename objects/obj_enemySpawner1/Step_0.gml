@@ -9,7 +9,7 @@ if(instance_exists(obj_buttonNextwave)){
 	    count = 0; // Reset the count for the next wave
 	    amount = round(amount * 1.5); // Increase the number of enemies for the next wave
 	    global.killed = 0; // Reset the killed variable for the next wave
-	    speed *= 1.3; // Increase enemy speed for the next wave
+	    speed *= 1.25; // Increase enemy speed for the next wave
 	    alarm[0] = spawnrate; // Reset the alarm for the next wave
 		 obj_buttonNextwave.clicked = false; // Reset the button clicked state
 		 instance_destroy(obj_buttonNextwave); //destroy button once clicked
