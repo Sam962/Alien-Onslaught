@@ -9,3 +9,5 @@ if (tower_selected) {
 	draw_circle(x, y, radius, true);
 }
 draw_self()
+
+
