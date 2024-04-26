@@ -16,13 +16,13 @@ if (not instance_exists(obj_enemy1)) {
 
 if (enemy_targeted && nearest_enemy.x > x and nearest_enemy.y >= y - 30 and nearest_enemy.y <= y + 30) {
 	var bullet = instance_create_layer(x, y, "Instances", obj_bullet);
-    bullet.speed = 3;
+    bullet.speed = 5;
     bullet.vspeed = 0;
 } else {
     if (enemy_targeted and (nearest_enemy.y - y) > 30) {
 		var bullet = instance_create_layer(x, y, "Instances", obj_bullet);
 		bullet.speed = 0;
-		bullet.vspeed = -3; 
+		bullet.vspeed = -5; 
 	}
 }
 
