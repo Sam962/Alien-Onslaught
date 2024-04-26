@@ -9,6 +9,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"propertyId":{"name":"value","path":"objects/obj_enemy1/obj_enemy1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"propertyId":{"name":"hp","path":"objects/obj_enemy1/obj_enemy1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"450",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"propertyId":{"name":"max_hp","path":"objects/obj_enemy1/obj_enemy1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"450",},
   ],
   "parent":{
     "name":"Objects",
