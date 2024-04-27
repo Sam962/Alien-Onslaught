@@ -36,5 +36,5 @@
     "path":"sprites/spr_invalidGoospawn/spr_invalidGoospawn.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
