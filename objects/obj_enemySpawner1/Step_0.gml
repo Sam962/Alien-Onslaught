@@ -15,6 +15,6 @@ if(instance_exists(obj_buttonNextwave)){
 		 instance_destroy(obj_buttonNextwave); //destroy button once clicked
 	}
 
-	} if (global.level > 10){
+	} if (global.level > 10){  //10
 		room_goto(rm_win);
 	}
