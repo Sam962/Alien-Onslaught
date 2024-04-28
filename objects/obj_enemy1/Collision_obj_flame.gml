@@ -4,9 +4,10 @@
 on_fire = true;
 
 
-
+// Currently this leads to more damage being done to the third enemy. 
+// I think this is better if returned to the step event (and crash fixed a different way)
 if (on_fire){
-	hp -= .05;
+	hp -= .002;
 }
 
 

@@ -9,3 +9,6 @@ sprite_change_delay = room_speed * 0.5; // Change sprite every 0.5 seconds
 
 // Initialize a timer to track sprite change delay
 sprite_change_timer = 0;
+
+// Want to draw enemies over the flame
+depth = 10; 

@@ -5,3 +5,4 @@ path_start(path_Enemy, obj_enemySpawner1.speed, 0, 1); //start path
 on_fire = false;
 
 
+depth = 1;

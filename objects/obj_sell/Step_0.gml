@@ -45,6 +45,8 @@ if (mouse_check_button_pressed(mb_left) and selling){
 if (selling){
 	cursor_sprite = spr_selling; //Make this sprite something better
 	
+	// The window_set_cursor function with GM is broken for MacOS (as of IDE v2024.2.0.132 Runtime v2024.2.0.163)
+	// One of these window_set_cursors will cause a keyboard/mouse freeze
 	if (os_type == os_windows){
 		window_set_cursor(cr_none);
 	}
