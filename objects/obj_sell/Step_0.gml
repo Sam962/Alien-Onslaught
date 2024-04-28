@@ -44,8 +44,13 @@ if (mouse_check_button_pressed(mb_left) and selling){
 // Change the cursor sprite to notify user they are in selling mode
 if (selling){
 	cursor_sprite = spr_selling; //Make this sprite something better
-	window_set_cursor(cr_none);
+	
+	if (os_type == os_windows){
+		window_set_cursor(cr_none);
+	}
 	
 } else {
-	window_set_cursor(cr_default);
+	if (os_type == os_windows){	
+		window_set_cursor(cr_default);
+	}
 }
