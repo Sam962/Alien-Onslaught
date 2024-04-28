@@ -4,6 +4,7 @@
 if (instance_exists(obj_buff) and (distance_to_object(obj_buff) <= obj_buff.radius) and not buffed){
 	buffed = true;
 	show_debug_message("Buffed")
+	
 }
 
 

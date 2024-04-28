@@ -32,5 +32,5 @@
     "path":"sprites/spr_tiles_500x500/spr_tiles_500x500.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

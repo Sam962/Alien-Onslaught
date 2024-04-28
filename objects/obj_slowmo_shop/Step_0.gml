@@ -21,8 +21,8 @@ if (turret_selected){
         var slowmo_instance = instance_find(obj_slowmotower, 0);
         if (!is_undefined(slowmo_instance) && obj_scoreboard.scrap >= 80){
             if (mouse_check_button_pressed(mb_left)){
-                instance_create_layer(mouse_x, mouse_y, "Instances", obj_slowmotower);
-				instance_create_layer(mouse_x, mouse_y, "Instances", obj_slowmo_sprite);
+                instance_create_layer(mouse_x, mouse_y, "bullets", obj_slowmotower);
+				instance_create_layer(mouse_x, mouse_y, "bullets", obj_slowmo_sprite);
                 placement_delay = 10;
                 obj_scoreboard.scrap -= 80;
             }

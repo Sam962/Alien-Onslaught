@@ -22,7 +22,7 @@ if(target == noone){
 // If there is a target and the tower thingy can shoot, create a bullet
 if (target != noone && can_shoot){
 	can_shoot = false;
-	var bullet = instance_create_layer(x, y, "Instances", obj_tower_bullet);
+	var bullet = instance_create_layer(x, y, "bullets", obj_tower_bullet);
 	bullet.target = target; 
 	bullet.fire_speed = fire_speed;
 	bullet.direction = point_direction(x, y, target.x, target.y);
