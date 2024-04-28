@@ -28,7 +28,7 @@ if (target != noone && can_shoot){
     var y_pos = path_get_y(path_Enemy, path_pos);
     var dir = point_direction(x, y, x_pos, y_pos);
     
-    var flame = instance_create_layer(x - 32, y - 32, "Instances", obj_flame)
+    var flame = instance_create_layer(x - 32, y - 32, "wall_and_barrier", obj_flame)
 
     flame.x = x;
     flame.y = y;

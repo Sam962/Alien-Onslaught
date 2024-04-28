@@ -38,5 +38,5 @@
     "path":"sprites/spr_testSprite/spr_testSprite.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
