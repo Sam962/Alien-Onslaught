@@ -2,6 +2,13 @@
 // You can write your code in this editor
 
 if (mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, obj_tower4_shop)){
+	
+	obj_sell.selling = false                  //addresses text overlap
+	obj_tower_shop.turret_selected = false
+	obj_tower_shop3.turret_selected = false
+	obj_tower_shop2.turret_selected = false
+	obj_buff_shop.turret_selected = false
+	obj_slowmo_shop.turret_selected = false //don't forget this one
 	turret_selected = true;
 }
 

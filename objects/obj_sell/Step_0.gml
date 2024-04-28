@@ -3,7 +3,20 @@
 
 // Enter the selling mode when the sell object is clicked
 if (mouse_check_button_pressed(mb_left) and position_meeting(mouse_x, mouse_y, obj_sell)){
-    selling = true;
+    
+	
+	obj_tower_shop.turret_selected = false
+	obj_tower_shop2.turret_selected = false
+	obj_tower_shop3.turret_selected = false
+	obj_tower4_shop.turret_selected = false
+	obj_buff_shop.turret_selected = false
+	obj_slowmo_shop.turret_selected = false
+	//set these to false to prevent text overlap if you click on other store items.
+	
+	
+	
+	
+	selling = true;
 } else if (mouse_check_button_pressed(mb_right)){
 	selling = false;
 	// Cancel selling mode if right mouse button is clicked
