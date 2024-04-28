@@ -22,3 +22,9 @@ if (instance_exists(obj_enemy1)) {
         }
     }
 }
+
+if (instance_exists(obj_buttonNextwave)){
+	path_speed = 0;
+} else {
+	path_speed = speed_thing;
+}
