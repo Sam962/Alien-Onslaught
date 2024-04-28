@@ -4,7 +4,6 @@
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_slowmotower","path":"objects/obj_slowmotower/obj_slowmotower.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_slowmo_sprite","path":"objects/obj_slowmo_sprite/obj_slowmo_sprite.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_slowmo_shop","path":"objects/obj_slowmo_shop/obj_slowmo_shop.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_invalidGooSpawn",
