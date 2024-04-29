@@ -78,7 +78,7 @@ if (power_up < 100){ //blue bar
 // TODO: ADD LINE TO ALLOW SHOOTING IF MOUSE ALREADY HELD DOWN PRIOR TO POSITION MEETING (idk yet)
 if (mouse_check_button(mb_left) and player_can_shoot) {
     var shop_hover_check = [obj_tower_shop, obj_tower_shop2, obj_tower_shop3, obj_slowmo_shop, obj_tower4_shop, obj_buff_shop];
-	var tower_hover_check = [obj_tower, obj_tower2, obj_tower3, obj_buff, obj_sell, obj_flamethrower, obj_buff];
+	var tower_hover_check = [obj_tower, obj_frame, obj_tower2, obj_tower3, obj_buff, obj_sell, obj_flamethrower, obj_buff];
     var sure_shoot = true;
 	
     if (obj_sell.selling ){
