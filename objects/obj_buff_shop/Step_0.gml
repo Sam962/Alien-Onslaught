@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, obj_buff_shop)){
+if (mouse_check_button_pressed(mb_left) && (position_meeting(mouse_x, mouse_y, obj_buff_shop) || position_meeting(mouse_x, mouse_y, obj_buff_shop.frameb))){
 	
 	obj_sell.selling = false                  //addresses text overlap
 	obj_tower_shop.turret_selected = false
