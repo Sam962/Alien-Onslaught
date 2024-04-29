@@ -5,7 +5,7 @@ depth = -101;
 draw_set_font(ft_menu); //select text
 draw_text(x - 75, y - 125, "INSTRUCTIONS");
 
-draw_text(x/11, y + 5, "W/A/S/D: Use the W, A, S, and D keys to move.\n* Mouse: Use the mouse cursor to aim. \n* Left Click: Shoot at enemies and select towers from the shop. \n* Shift: Stun enemies with an EMP blast.\n\nWhen in tower placement mode: \n* Left Click: Place a tower at the current mouse position. \n* Right Click: Cancel tower placement. \n\nWhen in selling mode: \n* Left Click: Click an existing tower at the current mouse \nposition to sell it for scrap. \n* Right Click: Cancel selling mode. \n \n***Survive 10 waves!***" );
+draw_text_transformed(x/11, y - 50, "W/A/S/D: Use the W, A, S, and D keys to move.\n* P: Pause the game \n* Mouse: Use the mouse cursor to aim. \n* Middle Click: Fullscreen \n* Left Click: Shoot at enemies and select towers from the shop. \n* Middle Click: Enter Fullscreen mode \n* Shift: Stun enemies with an EMP blast.\n\nWhen in tower placement mode: \n* Left Click: Place a tower at the current mouse position. \n* Right Click: Cancel tower placement. \n\nWhen in selling mode: \n* Left Click: Click an existing tower at the current mouse \nposition to sell it for scrap. \n* Right Click: Cancel selling mode. \n \n***Survive 10 waves!***", .8, .8, 0);
 
 
 
