@@ -2,7 +2,8 @@
 // You can write your code in this editor
 
 if (instance_exists(obj_buff) and (distance_to_object(obj_buff) <= obj_buff.radius) and not buffed){
-	buffed = true;
+	//buffed = true;
+	radius = 300;
 	show_debug_message("Buffed")
 }
 
