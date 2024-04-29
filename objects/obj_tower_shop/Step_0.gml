@@ -17,6 +17,7 @@ if (turret_selected){
 	if (placement_delay <= 0){
 		if (obj_scoreboard.scrap >= obj_tower.cost){
 			if (mouse_check_button_pressed(mb_left)){
+				audio_play_sound(snd_gold_sack, 1, false);
 				instance_create_layer(mouse_x, mouse_y, "Instances", obj_tower);
 				placement_delay = 10;
 				obj_scoreboard.scrap -= obj_tower.cost;

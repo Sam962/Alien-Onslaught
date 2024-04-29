@@ -18,6 +18,7 @@ if (speed > 0){
         sprite_choice = irandom(3) + 1;
         if (sprite_choice == 1){
             sprite_index = spr_flame;
+			audio_play_sound(snd_flame, 1, false);
         } else if (sprite_choice == 2){
             sprite_index = spr_flame2;
         } else {

@@ -3,7 +3,8 @@
 
 // for later on 
 health -= 20;
-
+audio_play_sound(snd_damage, 1, false);
 if (health <= 0) {
+
 	room_goto(rm_lose);
 }

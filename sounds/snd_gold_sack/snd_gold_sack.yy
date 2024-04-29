@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_gold_sack",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.882083,
+  "name":"snd_gold_sack",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_gold_sack.wav",
+  "type":0,
+  "volume":0.34,
+}
