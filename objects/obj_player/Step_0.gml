@@ -3,6 +3,29 @@
 x = clamp(x, sprite_width / 2, room_width - sprite_width / 2);
 y = clamp(y, sprite_height / 2, room_height - sprite_height / 2);
 
+
+// Calculate the angle between player and mouse cursor
+var mouse_angle = point_direction(x, y, mouse_x, mouse_y);
+
+// Sets the sprite direction based on the angle
+if (mouse_angle > 45 && mouse_angle <= 135) {
+    sprite_index = spr_playerUp; // facing down
+} else if (mouse_angle > 135 && mouse_angle <= 225) {
+       // Flip the sprite horizontally
+    sprite_index = spr_playerLeft; // facing right
+	image_xscale = 1; // flips sprite horizontally
+} else if (mouse_angle > 225 && mouse_angle <= 315) {
+    sprite_index = spr_playerDown; //facing up
+} else {
+    sprite_index = spr_playerLeft; //facing right
+	image_xscale = -1; //restored to default
+}
+
+
+
+
+
+
 var _left = keyboard_check(ord("A"));   //movement inputs
 var _right = keyboard_check(ord("D"));  
 var _up = keyboard_check(ord("W"));
@@ -48,16 +71,17 @@ if (power_up < 100){ //blue bar
 }
 
 
-image_angle = point_direction(x, y, mouse_x, mouse_y);
+//image_angle = point_direction(x, y, mouse_x, mouse_y);
 
 
 // ================================= Prevent shooting when clicking shop =================================
 // TODO: ADD LINE TO ALLOW SHOOTING IF MOUSE ALREADY HELD DOWN PRIOR TO POSITION MEETING (idk yet)
 if (mouse_check_button(mb_left) and player_can_shoot) {
-    var shop_hover_check = [obj_tower_shop, obj_tower_shop2, obj_tower_shop3, obj_slowmo_shop];
-	var tower_hover_check = [obj_tower, obj_tower2, obj_tower3, obj_buff, obj_sell];
+    var shop_hover_check = [obj_tower_shop, obj_tower_shop2, obj_tower_shop3, obj_slowmo_shop, obj_tower4_shop, obj_buff_shop];
+	var tower_hover_check = [obj_tower, obj_tower2, obj_tower3, obj_buff, obj_sell, obj_flamethrower, obj_buff];
     var sure_shoot = true;
-    if (obj_sell.selling){
+	
+    if (obj_sell.selling ){
 		sure_shoot = false;
 	}
     for (var i = 0; i < array_length(shop_hover_check); i++) {
@@ -73,7 +97,12 @@ if (mouse_check_button(mb_left) and player_can_shoot) {
             break;
         }
     }
-    
+    if (position_meeting(mouse_x, mouse_y, obj_crew_shop) && obj_tower_shop.turret_selected = false && obj_tower_shop2.turret_selected = false && obj_tower_shop3.turret_selected = false && obj_buff_shop.turret_selected = false && obj_tower4_shop.turret_selected = false && obj_sell.selling = false && obj_slowmo_shop.turret_selected = false ){
+	
+	sure_shoot = false
+	
+	
+}
     if (sure_shoot) {
         var bullet_instance = instance_create_layer(x, y, "Player", obj_bullet);
         // Bullet fires in front of the player
@@ -112,6 +141,12 @@ if (position_meeting(mouse_x, mouse_y, obj_buff) and mouse_check_button_pressed(
 	    obj_buff.turret_selected = false;
 	}
 }
+
+
+
+
+
+
 
 
 
