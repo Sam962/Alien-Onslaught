@@ -2,8 +2,9 @@
 // You can write your code in this editor
 
 if (instance_exists(obj_buff) and (distance_to_object(obj_buff) <= obj_buff.radius) and not buffed){
-	buffed = true;
+	//buffed = true;
 	show_debug_message("Buffed")
+	radius = 300 //buff increases range by 100m
 	
 }
 
