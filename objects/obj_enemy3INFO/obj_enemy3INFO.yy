@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy3",
-    "path":"sprites/spr_enemy3/spr_enemy3.yy",
+    "name":"spr_bossAlien",
+    "path":"sprites/spr_bossAlien/spr_bossAlien.yy",
   },
   "spriteMaskId":null,
   "visible":true,
