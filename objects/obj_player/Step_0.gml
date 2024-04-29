@@ -104,7 +104,7 @@ if (mouse_check_button(mb_left) and player_can_shoot) {
 	
 }
     if (sure_shoot) {
-        var bullet_instance = instance_create_layer(x, y, "Player", obj_bullet);
+        var bullet_instance = instance_create_layer(x, y, "bullets", obj_bullet);
         // Bullet fires in front of the player
         bullet_instance.x += lengthdir_x(20, image_angle);
         bullet_instance.y += lengthdir_y(20, image_angle);

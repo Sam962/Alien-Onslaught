@@ -19,7 +19,7 @@ if(target == noone){
 if (target != noone && can_shoot){
 	can_shoot = false;
 	audio_play_sound(snd_explosion, 1, false)
-	var bullet = instance_create_layer(x, y, "Instances", obj_tower_bullet3);
+	var bullet = instance_create_layer(x, y, "bullets", obj_tower_bullet3);
 	bullet.target = target; 
 	bullet.fire_speed = fire_speed;
 	bullet.direction = point_direction(x, y, target.x, target.y);
