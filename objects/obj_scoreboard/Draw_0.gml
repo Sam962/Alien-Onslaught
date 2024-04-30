@@ -22,3 +22,8 @@ if instance_exists(obj_player){
 
 
 
+ if (global.level == 10) {
+ 
+ draw_text(x + 450, (y/2) + 5, "THIS IS THEIR LAST PUSH!");
+ 
+ }

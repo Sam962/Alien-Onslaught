@@ -6,7 +6,7 @@ if(global.killed >= amount){
 
 }
 
-if(global.killed >= amount && global.level == 10){
+if(global.killed >= 75 && global.level == 10){
 
 	room_goto(rm_win);
 }
