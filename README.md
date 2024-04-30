@@ -43,12 +43,6 @@ Alien Onslaught is a tower defense game in which you are an astronaut whose ship
 * Artist: Elise Machado
 * Programmer: Luke Hopson
 
-## Credits
-- Producer: Sam Aldehayyat
-- Designer: M. Mitchell Yang
-- Artist: Elise Machado
-- Programmer: Luke Hopson
-
 ## Soundtrack
 - [Magic Space by CodeManu](https://opengameart.org/content/magic-space/)
 - [Spacelife #14 by yd](https://opengameart.org/content/spacelife-14)
