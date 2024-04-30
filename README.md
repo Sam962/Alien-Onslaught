@@ -1,6 +1,6 @@
 # Alien Onslaught
 
-Alien Onslaught is a tower defense game in which you are an astronaut whose ship is currently in the midstt of an alien invasion. Your objective is to strategically deploy various towers in an effort to fend off relentless waves of alien invaders. With a variety of choices, enemy types, and gameplay mechanics, Alien Onslaught offers a unique spin on the tower-defense genre that rewards well-thought tactics and promotes customizeable approaches.
+Alien Onslaught is a tower defense game in which you are an astronaut whose ship is currently in the midst of an alien invasion. Your objective is to strategically deploy various towers in an effort to fend off relentless waves of alien invaders. With a variety of choices, enemy types, and gameplay mechanics, Alien Onslaught offers a unique spin on the tower-defense genre that rewards well-thought tactics and promotes customizeable approaches.
 
 
 # Features
@@ -20,6 +20,13 @@ Alien Onslaught is a tower defense game in which you are an astronaut whose ship
     * Left Click: Place atower at the current mouse position.
     * Right Click: Cancel tower placement.
 
+# Cheat Codes
+
+* Press "Alt" + "1" to activate infinite health cheat.
+* Press "Alt" + "2" to activate unlimited scrap.
+* Press "Alt" + "3" to activate faster movement cheat.
+* Press "Alt" + "4" to activate instant EMP recharge cheat.
+
 
 # How to Play
 
@@ -36,8 +43,6 @@ Alien Onslaught is a tower defense game in which you are an astronaut whose ship
 * Artist: Elise Machado
 * Programmer: Luke Hopson
 
-
-everything underneath here is pasted
 ## Credits
 - Producer: Sam Aldehayyat
 - Designer: M. Mitchell Yang
@@ -58,7 +63,6 @@ everything underneath here is pasted
 - [Night Sky Stars and Galaxies by Fupi](https://opengameart.org/content/night-sky-stars-and-galaxies-nightskyemissionpng)
 - [Sci-Fi Platform Tiles by Eris](https://opengameart.org/content/sci-fi-platform-tiles)
 - [Ulukai's Space Skyboxes by Ulukai [submitted by Calinou]](https://opengameart.org/content/ulukais-space-skyboxes)
-
 - Alien, Turret, Bullet, and Player sprites by Elise Machado
 - Flame Effect and Shop UI sprites by Luke Hopson
 - Energy Goo and Smoke sprites by M. Mitchell Yang
