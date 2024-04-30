@@ -3,8 +3,7 @@
 
 if(count < amount) { //if count is less than a specified amount, spawn an enemy and increment count by 1
 	instance_create_layer(x, y, "InvalidTowerSpawn", obj_enemy1)
-	count++
-	alarm[0] = spawnrate;
+	
 	if (global.level >= 3 && global.level < 6){
 		// Enemy 2 spawns every 8th spawn (waves 3, 4, 5)
 		if ((count % 8) == 0){
@@ -21,7 +20,18 @@ if(count < amount) { //if count is less than a specified amount, spawn an enemy 
 			instance_create_layer(x, y, "InvalidTowerSpawn", obj_enemy3)
 		}
 		
+		} else if (global.level > 9){
+			if ((count % 1) == 0){
+			instance_create_layer(x, y, "InvalidTowerSpawn", obj_enemy2)		
+			
 		}
+		 
+			if ((count % 5) == 0){
+			instance_create_layer(x, y, "InvalidTowerSpawn", obj_enemy3)}
+		
+		}
+		count++
+	alarm[0] = spawnrate;
 }
 
 
