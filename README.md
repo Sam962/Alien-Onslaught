@@ -1,29 +1,14 @@
 # Alien Onslaught
 
-Welcome to Alien Onslaught! Brace yourself for an exhilarating tower defense adventure, pitting you against unyielding hordes of extraterrestrial invaders. Are you prepared to thwart the Alien Onslaught and safeguard humanity's future?
-
-# Table of Contents
-1.    Introduction
-2.    Features
-3.    Controls
-4.    How to Play
-5.    Credits
-6.    Screenshots
-7.    Contributing
-8.    Licensing
-
-# Introduction
-
-Alien Onslaught is an action-packed tower defense game set in a futuristic world overrun by alien forces. Your mission is to strategically deploy powerful towers and defenses to fend off the relentless waves of alien invaders. With challenging levels, diverse enemy types, and dynamic gameplay mechanics, Alien Onslaught offers a thrilling experience that will test your tactical skills and resilience.
+Alien Onslaught is a tower defense game in which you are an astronaut whose ship is currently in the midstt of an alien invasion. Your objective is to strategically deploy various towers in an effort to fend off relentless waves of alien invaders. With a variety of choices, enemy types, and gameplay mechanics, Alien Onslaught offers a unique spin on the tower-defense genre that rewards well-thought tactics and promotes customizeable approaches.
 
 
 # Features
 
 * Engaging tower defense gameplay with a sci-fi twist.
-* Dynamic maps with strategic chokepoints and environmental hazards.
+* Dynamic maps with strategic chokepoints.
 * Resource management system to earn and spend resources on tower construction.
-* Action-packed combat with manual shooting mechanics for players to engage enemies directly.
-* Leaderboards to compete with friends and players worldwide for the highest scores.
+* Engaged combat with manual shooting mechanics for players to attack enemies directly.
 
 # Controls
 
@@ -43,7 +28,7 @@ Alien Onslaught is an action-packed tower defense game set in a futuristic world
 * Earning Resources: Defeat alien enemies to earn resources. Use these resources to build and upgrade towers.
 * Combatting Enemies: Waves of alien invaders will advance along predetermined paths. Deploy towers strategically to eliminate them before they reach your base.
 * Direct Combat: Engage enemies directly by shooting them with your weapon. Aim using the mouse cursor and click the right mouse button to fire.
-* Victory Conditions: Successfully repel all waves of alien attacks to complete the level. Earn rewards and unlock new challenges as you progress.
+* Victory Conditions: Successfully repel all waves of alien attacks to complete the level. Earn rewards (scrap) and unlock new towers as you progress.
 
 # Credits
 * Producer: Sam Aldehayyat
@@ -51,30 +36,39 @@ Alien Onslaught is an action-packed tower defense game set in a futuristic world
 * Artist: Elise Machado
 * Programmer: Luke Hopson
 
-# Screenshots
 
-- will be provided later on!
+everything underneath here is pasted
+## Credits
+- Producer: Sam Aldehayyat
+- Designer: M. Mitchell Yang
+- Artist: Elise Machado
+- Programmer: Luke Hopson
 
-# Contributing
+## Soundtrack
+- [Magic Space by CodeManu](https://opengameart.org/content/magic-space/)
+- [Spacelife #14 by yd](https://opengameart.org/content/spacelife-14)
+- [Space Music: Out There by yd](https://opengameart.org/content/space-music-out-there)
+- [Tower Defense Theme by DST](https://opengameart.org/content/tower-defense-theme)
 
-Contributions to the Alien Onslaught project are welcome! If you encounter any bugs or have suggestions for improvements, please open an issue or submit a pull request on GitHub.
+## Resources
+### UI/Menu Buttons:
+- [UI Pack by Kenny](https://opengameart.org/content/ui-pack)
 
-# Licensing
+### Sprites/Backgrounds:
+- [Night Sky Stars and Galaxies by Fupi](https://opengameart.org/content/night-sky-stars-and-galaxies-nightskyemissionpng)
+- [Sci-Fi Platform Tiles by Eris](https://opengameart.org/content/sci-fi-platform-tiles)
+- [Ulukai's Space Skyboxes by Ulukai [submitted by Calinou]](https://opengameart.org/content/ulukais-space-skyboxes)
 
-- will be provided later on!
+- Alien, Turret, Bullet, and Player sprites by Elise Machado
+- Flame Effect and Shop UI sprites by Luke Hopson
+- Energy Goo and Smoke sprites by M. Mitchell Yang
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Sound Effects:
+- [Bomb_Explosion_8Bit by Luke.RUSTLTD](https://opengameart.org/content/bombexplosion8bit)
+- [Catching Fire by themightyglider](https://opengameart.org/content/catching-fire)
+- [Electricity Game Sound Pack by faxcorp](https://opengameart.org/content/electricity-game-sound-pack)
+- [Explosion by Kutejnikov](https://opengameart.org/content/explosion-8)
+- [Retro Sounds by artisticdude](https://opengameart.org/content/retro-sounds-0)
+- [Sack of Gold by Amarikah](https://opengameart.org/content/sack-of-gold)
 
 
