@@ -12,22 +12,33 @@ if (mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, ob
 	obj_slowmo_shop.turret_selected = false //don't forget this one
 }
 
+var tower_placement_check = [obj_tower, obj_frame, obj_tower2, obj_tower3, obj_buff, obj_sell, obj_flamethrower, obj_buff];
+
 if (turret_selected){
-	cursor_sprite = spr_tower;
-	if (placement_delay <= 0){
-		if (obj_scoreboard.scrap >= obj_tower.cost){
-			if (mouse_check_button_pressed(mb_left)){
-				if not (position_meeting(mouse_x, mouse_y, obj_invalidSpawn)){
-					audio_play_sound(snd_gold_sack, 1, false);
-					instance_create_layer(mouse_x, mouse_y, "Instances", obj_tower);
-					placement_delay = 10;
-					obj_scoreboard.scrap -= obj_tower.cost;
-				}
-			}
-		}
-	} else {
-		placement_delay--;
-	}
+    cursor_sprite = spr_tower;
+    if (placement_delay <= 0){
+        if (obj_scoreboard.scrap >= obj_tower.cost){
+            if (mouse_check_button_pressed(mb_left)){
+                if not (position_meeting(mouse_x, mouse_y, obj_invalidSpawn)){
+                    var collision_found = false;
+                    for (var i = 0; i < array_length(tower_placement_check); i++) {
+                        if (position_meeting(mouse_x, mouse_y, tower_placement_check[i])){
+                            collision_found = true;
+                            break; 
+                        }
+                    }
+                    if (!collision_found) {
+                        audio_play_sound(snd_gold_sack, 1, false);
+                        instance_create_layer(mouse_x, mouse_y, "Instances", obj_tower);
+                        placement_delay = 10;
+                        obj_scoreboard.scrap -= obj_tower.cost;
+                    }
+                }
+            }
+        }
+    } else {
+        placement_delay--;
+    }
 }
 
 if (mouse_check_button_pressed(mb_right)){
