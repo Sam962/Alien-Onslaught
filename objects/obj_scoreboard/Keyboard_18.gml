@@ -15,7 +15,7 @@ scrap += 50 //unlimited money
 
 if (keyboard_check(ord("3"))){
 
-obj_player.my_speed += 1 //speed cheat
+obj_player.my_speed = 15 //speed cheat
 
 }
 
