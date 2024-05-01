@@ -17,7 +17,7 @@ Alien Onslaught is a tower defense game in which you are an astronaut whose ship
 * Left Click: Shoot at enemies and select towers from the shop.
 * Shift: Stun enemies with an EMP blast.
 * When in tower placement mode:
-    * Left Click: Place atower at the current mouse position.
+    * Left Click: Place a tower at the current mouse position.
     * Right Click: Cancel tower placement.
 
 # Cheat Codes
