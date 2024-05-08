@@ -3,6 +3,10 @@
 Alien Onslaught is a tower defense game in which you are an astronaut whose ship is currently in the midst of an alien invasion. Your objective is to strategically deploy various towers in an effort to fend off relentless waves of alien invaders. With a variety of choices, enemy types, and gameplay mechanics, Alien Onslaught offers a unique spin on the tower-defense genre that rewards well-thought tactics and promotes customizeable approaches.
 
 
+
+https://github.com/Sam962/Alien-Onslaught/assets/144272581/906842b1-8960-4e57-96fa-a0b896dfe417
+
+
 # Features
 
 * Engaging tower defense gameplay with a sci-fi twist.
